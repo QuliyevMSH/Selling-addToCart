@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        .top {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            gap: 30px;
+
+            .about {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 10px;
+
+                p {
+                    color: black;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            .quick {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 10px;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .follow {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 10px;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                .icons {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 20px;
+
+                    .icon {
+                        color: orange;
+                        cursor: pointer;
+                        &:hover{
+                            color: rgb(109, 71, 1);
+                        }
+                    }
+                }
+            }
+
+            .featured {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 10px;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                button {
+                    width: 60%;
+                    padding: 10px;
+                    background-color: black;
+                    cursor: pointer;
+                    color: white;
+                    border: 2px solid black;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: red;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:0) and (max-width:990px) {
+    footer {
+        .container {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .about {
+                    width: 80%;
+
+                    p {
+                        width: 80%;
+                    }
+
+                    h1 {
+                        font-size: 17px;
+                    }
+                }
+
+                .quick {
+                    width: 80%;
+
+                    h1 {
+                        font-size: 17px;
+                    }
+                }
+
+                .follow {
+                    width: 80%;
+
+                    h1 {
+                        font-size: 17px;
+                    }
+                }
+
+                .featured {
+                    width: 80%;
+
+                    h1 {
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                p {
+                    width: 80%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

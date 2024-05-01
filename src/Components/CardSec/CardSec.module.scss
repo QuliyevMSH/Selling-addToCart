@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cards{
+    width: 28%;
+    height: 620px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            border: 2px solid red;
+        }
+    }
+
+    .hoodie {
+        font-size: 20px;
+        color: black;
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .numbers {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+        .star{
+            color: rgb(199, 177, 8);
+        }
+
+        .heart {
+            display: flex;
+            padding: 0 0 0 10px;
+            p{
+                color: green;
+                span{
+                    color: black;
+                }
+            }
+        }
+    }
+
+
+    .comment {
+        color: gray;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        .cartButton {
+            padding: 10px 40px;
+            font-size: 15px;
+            border: 2px solid black;
+            font-weight: 100;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: transparent;
+                color: black;
+            }
+        }
+
+        .viewButton {
+            padding: 10px 40px;
+            font-size: 15px;
+            border: 2px solid black;
+            font-weight: 600;
+            cursor: pointer;
+            color: black;
+            background-color: white;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:950px) {
+    
+    .cards{
+        width: 45%;
+    }
+
+
+}
+@media screen and (min-width: 300px) and (max-width:640px) {
+    
+    .cards{
+        width: 90%;
+    }
+
+
+}
